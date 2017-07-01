@@ -76,7 +76,7 @@ nav a {
   display: block;
   max-height: 100%;
 }
-.glasses {
+.glasses img {
   max-width: 9em;
 }
 .product h4 {
@@ -108,6 +108,29 @@ footer {
   align-items: center;
   height: 18rem;
 }
+.desktop {
+  display: block;
+}
+.tablet {
+  display: none;
+}
 @media only screen and (max-width:1024px) {
-
+  html {
+    font-size: 16px;
+  }
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  .glasses {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
 }
